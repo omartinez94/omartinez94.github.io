@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Packages
 - Video Player: https://www.npmjs.com/package/react-player
-- Font: https://www.npmjs.com/package/react-font
+- GitHub Pages: https://www.npmjs.com/package/gh-pages
 
 ## Available Scripts
 
