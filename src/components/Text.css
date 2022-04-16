@@ -1,0 +1,17 @@
+.custom-text{
+    font-family: 'Montserrat';
+    margin: 2rem 1rem;
+    color: var(--sec-color);
+    font-size: xx-large;
+}
+
+.custom-text.opaque{
+    color: var(--thrd-color) !important;
+}
+
+.custom-text.as-title{
+    margin-bottom: 0 !important;
+}
+.custom-text.as-title+p{
+    margin-top: 0 !important;
+}

@@ -1,0 +1,14 @@
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.counter .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.counter .container .down{
+    font-size: large;
+}

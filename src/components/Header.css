@@ -1,0 +1,76 @@
+.react-player{
+    filter: blur(2px);
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.react-player video{
+    object-fit: cover;
+  width: 100vw !important;
+  height: 110vh !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.player-wrapper{
+    height: 100vh;
+    position: relative;
+}
+
+.player-content {
+    display: grid;
+    grid-column: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-47%, -50%);
+    height: 100%;
+}
+
+.player-content .hero-topimg{
+    width: auto;
+    max-height: 12em;
+}
+
+.player-content .hero-text{
+    text-align: center;
+    transform:  translate(-52%, -13%) rotate(-12deg) !important ;
+    font-family: 'Updock';
+    font-size: 7em;
+    line-height: 0.9;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 15% !important;
+    margin: 0 auto;
+    color: var(--main-color);
+}
+
+.player-content .hero-topimg,
+.player-content .hero-text{
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.hero-counter{
+    font-family: 'Montserrat';
+    font-size: xx-large;
+    /* line-height: 0.1; */
+    font-weight: 900;
+    margin: 0;
+}
+
+.hero-counter p{    
+    margin: 0.2em auto;
+    font-size: xxx-large;
+    color: var(--main-color);
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.hero-divider{
+    width: 90%;
+    max-width: 500px;
+}

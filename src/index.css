@@ -1,3 +1,18 @@
+:root {
+  --main-color: #5a1d1d;
+  --sec-color: #e7e1e3;
+  --thrd-color: #ffaaaa;
+  --main-bg: #282c34;
+}
+
+svg.bg path {
+  fill: var(--main-bg)
+}
+
+.pos-rel{
+  position: relative;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +20,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-bg);
+  overflow-x: hidden;
 }
 
 code {

@@ -1,0 +1,27 @@
+.merged-text{
+    position: relative;
+}
+
+.merged-text p{
+    margin: 0;
+}
+
+.merged-text .back{
+    color: var(--thrd-color);
+    font-size: 50px;
+    filter: blur(1px);
+    text-transform: uppercase;
+    font-family: monospace;
+}
+
+.merged-text .front{
+    font-size: 35px;
+    font-weight: bolder;
+    color: var(--sec-color);
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    width: 100%;
+    font-family: 'Montserrat';
+    transform: translate(-50%);
+}

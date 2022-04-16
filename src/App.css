@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.image-anchor {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.image-anchor img { 
+    max-height: 15rem;
+}
+
+.image-anchor p {
+  width: 70%;
+  font-family: 'Montserrat';
+  margin: auto 2rem;
+  color: var(--sec-color);
+  font-size: xx-large;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
