@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/xvvale/static/css/main.c479e6bc.css",
+    "main.js": "/xvvale/static/js/main.f51386ef.js",
+    "static/js/787.d6ee00ee.chunk.js": "/xvvale/static/js/787.d6ee00ee.chunk.js",
+    "index.html": "/xvvale/index.html",
+    "main.c479e6bc.css.map": "/xvvale/static/css/main.c479e6bc.css.map",
+    "main.f51386ef.js.map": "/xvvale/static/js/main.f51386ef.js.map",
+    "787.d6ee00ee.chunk.js.map": "/xvvale/static/js/787.d6ee00ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c479e6bc.css",
+    "static/js/main.f51386ef.js"
+  ]
+}
