@@ -1,5 +1,6 @@
 .merged-text{
     position: relative;
+    margin: auto 2rem 4rem;
 }
 
 .merged-text p{
@@ -15,12 +16,12 @@
 }
 
 .merged-text .front{
-    font-size: 35px;
+    font-size: 45px;
     font-weight: bolder;
     color: var(--sec-color);
     position: absolute;
     left: 50%;
-    top: 56%;
+    top: 45%;
     width: 100%;
     font-family: 'Montserrat';
     transform: translate(-50%);

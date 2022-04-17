@@ -12,6 +12,10 @@ import mypointer from "./assets/img/mypointer.svg";
 import mydress from "./assets/img/mydress.svg";
 import myheel from "./assets/img/myheel.svg";
 
+const goToDirection = () => {
+  const url = "https://www.google.com/maps/dir//PARQUE+LINEAL+CLOUTHIER,+Esquina+Clouthier,+Cromo,+Trabajadores,+66179+Monterrey,+N.L./@25.6780326,-100.4174333,16.22z/data=!4m8!4m7!1m0!1m5!1m1!1s0x866297e817ed7f9f:0x91828665087d77ad!2m2!1d-100.4179278!2d25.6807215";
+  window.open(url, "_blank");
+};
 
 function App() {
   const dateTarget = new Date(2022, 8, 13, 0, 0, 0);
@@ -22,11 +26,6 @@ function App() {
   })} ${dateTarget.getFullYear()}
   `;
   // https://es.vexels.com/svg-png/quince/p/2/
-
-  const goToDirection = () => {
-    //const url = "https://www.google.com/maps/dir/Arena+Monterrey,+Av.+Francisco+I.+Madero+2500,+Centro,+64010+Monterrey,+N.L./@25.680855,-100.288276,15z/data=!4m7!4m6!1m5!1m1!1s0x86629563d91a6a9f:0x4833b800750556fa!2m2!1d-100.288276!2d25.680855";
-    //window.open(url, "_blank");
-  };
 
   return (
     <div className="App">
@@ -88,15 +87,13 @@ function App() {
       <Text text="19:00 hrs" />
       <Text text="La direccion" opaque={true} asTitle={true} />
       <Text text="Inserte una direccion valida aqui #900, Santa Catarina N.L." />
-      <div className="image-anchor" onClick={goToDirection()}>
+      <div className="image-anchor" onClick={goToDirection}>
         <img src={mypointer} alt="mi puntoero" />
         <p>Vee la ubicación en el mapa</p>
       </div>
       <br />
       <br />
       <MergedText backText={"te esperamos"} frontText={"Gracias"} />
-      <br />
-      <br />
       <br />
       <Image src={mydress} alt="mis quince" />
       <br />
