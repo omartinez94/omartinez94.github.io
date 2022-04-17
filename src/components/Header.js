@@ -12,11 +12,9 @@ export default function Header(props) {
           controls={false}
           muted={true}
           loop={true}
-          url="video/video_alt.mp4"
+          url={require("../assets/video/video_alt.mp4")}
         />
-        <div className="player-content">
-          {props.children}
-        </div>
+        <div className="player-content">{props.children}</div>
       </div>
     </section>
   );

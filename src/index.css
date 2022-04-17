@@ -9,6 +9,14 @@ svg.bg path {
   fill: var(--main-bg)
 }
 
+#Layer_1{
+  fill: var(--main-bg)
+}
+
+.bg-light {
+  fill: var(--sec-color)
+}
+
 .pos-rel{
   position: relative;
 }

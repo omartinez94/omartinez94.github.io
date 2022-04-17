@@ -6,32 +6,44 @@ import MergedText from './components/MergedText';
 import Text from './components/Text';
 import { useCountdown } from './hooks/useCountdown';
 
+import myfifteen from "./assets/img/myfifteen.svg";
+import myxv from "./assets/img/myxv.svg";
+import mypointer from "./assets/img/mypointer.svg";
+import mydress from "./assets/img/mydress.svg";
+import myheel from "./assets/img/myheel.svg";
+
+
 function App() {
   const dateTarget = new Date(2022, 8, 13, 0, 0, 0);
   const [days, hours, minutes, seconds] = useCountdown(dateTarget);
   const day = `
-    ${dateTarget.getDate()} ${dateTarget.toLocaleString("es-MX", { month: "short" })} ${dateTarget.getFullYear()}
+    ${dateTarget.getDate()} ${dateTarget.toLocaleString("es-MX", {
+    month: "short",
+  })} ${dateTarget.getFullYear()}
   `;
-
+  // https://es.vexels.com/svg-png/quince/p/2/
 
   const goToDirection = () => {
-    const url =
-      "https://www.google.com/maps/dir/Arena+Monterrey,+Av.+Francisco+I.+Madero+2500,+Centro,+64010+Monterrey,+N.L./@25.680855,-100.288276,15z/data=!4m7!4m6!1m5!1m1!1s0x86629563d91a6a9f:0x4833b800750556fa!2m2!1d-100.288276!2d25.680855";
-      window.open(url, "_blank")
-  }
+    //const url = "https://www.google.com/maps/dir/Arena+Monterrey,+Av.+Francisco+I.+Madero+2500,+Centro,+64010+Monterrey,+N.L./@25.680855,-100.288276,15z/data=!4m7!4m6!1m5!1m1!1s0x86629563d91a6a9f:0x4833b800750556fa!2m2!1d-100.288276!2d25.680855";
+    //window.open(url, "_blank");
+  };
 
   return (
     <div className="App">
       <Header>
         <img
           className="hero-topimg"
-          src="img\myfifteen.png"
+          src={myfifteen}
           alt="imagen inicio de invitacion"
         />
         <h1 className="hero-text">Vale Medina Salazar</h1>
         <div className="hero-counter">
           <p>{day}</p>
-          <img className="hero-divider" src="img\divider-2.png" alt="divider" />
+          <img
+            className="hero-divider"
+            src={require("./assets/img/divider-2.png")}
+            alt="divider"
+          />
           <Counter days={days} hours={hours} minutes={minutes} secs={seconds} />
         </div>
       </Header>
@@ -39,10 +51,10 @@ function App() {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         className="bg"
-        style={{position:"relative", bottom:"-1px"}}
+        style={{ position: "relative", bottom: "-1px" }}
       >
         <path
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,128L60,106.7C120,85,240,43,360,21.3C480,0,600,0,720,26.7C840,53,960,107,1080,122.7C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
         ></path>
       </svg>
@@ -59,7 +71,7 @@ function App() {
         }
       />
       <br />
-      <Image src="img\myxv-light.png" alt="mis quince" />
+      <Image light={true} src={myxv} alt="mis quince" />
       <br />
       <Text
         text={
@@ -68,14 +80,16 @@ function App() {
       />
       <br />
       <div style={{ width: "35%", margin: "0 auto" }}>
-        <Image src="img\myheel-light.png" alt="mi tacon" />
+        <Image src={myheel} alt="mi tacon" />
       </div>
       <Text text="El dia" opaque={true} asTitle={true} />
       <Text text={day} />
+      <Text text="A las" opaque={true} asTitle={true} />
+      <Text text="19:00 hrs" />
       <Text text="La direccion" opaque={true} asTitle={true} />
       <Text text="Inserte una direccion valida aqui #900, Santa Catarina N.L." />
       <div className="image-anchor" onClick={goToDirection()}>
-        <img src="img\mypointer-light.png" alt="mi puntoero" />
+        <img src={mypointer} alt="mi puntoero" />
         <p>Vee la ubicación en el mapa</p>
       </div>
       <br />
@@ -84,7 +98,7 @@ function App() {
       <br />
       <br />
       <br />
-      <Image src="img\mydress-light.png" alt="mis quince" />
+      <Image src={mydress} alt="mis quince" />
       <br />
       <br />
     </div>
