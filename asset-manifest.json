@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/xvvale/static/css/main.35bfba6d.css",
-    "main.js": "/xvvale/static/js/main.b512668b.js",
+    "main.js": "/xvvale/static/js/main.667b62a9.js",
     "static/js/787.d6ee00ee.chunk.js": "/xvvale/static/js/787.d6ee00ee.chunk.js",
     "static/media/video_alt.mp4": "/xvvale/static/media/video_alt.967fb7c6585e4e957958.mp4",
     "static/media/mydress.svg": "/xvvale/static/media/mydress.12567da8038d5287ee343c62705e7802.svg",
@@ -11,11 +11,11 @@
     "static/media/myxv.svg": "/xvvale/static/media/myxv.a72a891a3a361131b830677655d96a9b.svg",
     "index.html": "/xvvale/index.html",
     "main.35bfba6d.css.map": "/xvvale/static/css/main.35bfba6d.css.map",
-    "main.b512668b.js.map": "/xvvale/static/js/main.b512668b.js.map",
+    "main.667b62a9.js.map": "/xvvale/static/js/main.667b62a9.js.map",
     "787.d6ee00ee.chunk.js.map": "/xvvale/static/js/787.d6ee00ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35bfba6d.css",
-    "static/js/main.b512668b.js"
+    "static/js/main.667b62a9.js"
   ]
 }
