@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/xvvale/static/css/main.c479e6bc.css",
-    "main.js": "/xvvale/static/js/main.f51386ef.js",
+    "main.css": "/xvvale/static/css/main.497c6e6b.css",
+    "main.js": "/xvvale/static/js/main.770f3ebd.js",
     "static/js/787.d6ee00ee.chunk.js": "/xvvale/static/js/787.d6ee00ee.chunk.js",
+    "static/media/video_alt.mp4": "/xvvale/static/media/video_alt.967fb7c6585e4e957958.mp4",
+    "static/media/mydress.svg": "/xvvale/static/media/mydress.12567da8038d5287ee343c62705e7802.svg",
+    "static/media/myheel.svg": "/xvvale/static/media/myheel.b9045b9a2d31677aa8ef8c9783a0986b.svg",
+    "static/media/myfifteen.svg": "/xvvale/static/media/myfifteen.d4255b564dcb04ebddb1d0786800b06e.svg",
+    "static/media/mypointer.svg": "/xvvale/static/media/mypointer.fac5bcbd922d7ab1cde1616275198371.svg",
+    "static/media/myxv.svg": "/xvvale/static/media/myxv.a72a891a3a361131b830677655d96a9b.svg",
     "index.html": "/xvvale/index.html",
-    "main.c479e6bc.css.map": "/xvvale/static/css/main.c479e6bc.css.map",
-    "main.f51386ef.js.map": "/xvvale/static/js/main.f51386ef.js.map",
+    "main.497c6e6b.css.map": "/xvvale/static/css/main.497c6e6b.css.map",
+    "main.770f3ebd.js.map": "/xvvale/static/js/main.770f3ebd.js.map",
     "787.d6ee00ee.chunk.js.map": "/xvvale/static/js/787.d6ee00ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c479e6bc.css",
-    "static/js/main.f51386ef.js"
+    "static/css/main.497c6e6b.css",
+    "static/js/main.770f3ebd.js"
   ]
 }
