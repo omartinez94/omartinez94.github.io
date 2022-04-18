@@ -11,9 +11,11 @@ import myxv from "./assets/img/myxv.svg";
 import mypointer from "./assets/img/mypointer.svg";
 import mydress from "./assets/img/mydress.svg";
 import myheel from "./assets/img/myheel.svg";
+import Loader from './components/Loader';
+import { useState, useEffect } from "react";
 
 const goToDirection = () => {
-  const url = "https://www.google.com/maps/dir//PARQUE+LINEAL+CLOUTHIER,+Esquina+Clouthier,+Cromo,+Trabajadores,+66179+Monterrey,+N.L./@25.6780326,-100.4174333,16.22z/data=!4m8!4m7!1m0!1m5!1m1!1s0x866297e817ed7f9f:0x91828665087d77ad!2m2!1d-100.4179278!2d25.6807215";
+  const url = "https://goo.gl/maps/5fhbG37fNcWNELNB9";
   window.open(url, "_blank");
 };
 
@@ -27,8 +29,22 @@ function App() {
   `;
   // https://es.vexels.com/svg-png/quince/p/2/
 
-  return (
-    <div className="App">
+  const [isLoading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  const loader = (
+    <section className="fade">
+      <Loader />
+    </section>
+  );
+
+  const content = (
+    <section className='fade'>
       <Header>
         <img
           className="hero-topimg"
@@ -50,10 +66,12 @@ function App() {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
         className="bg"
+        fill="#282c34"
         style={{ position: "relative", bottom: "-1px" }}
       >
         <path
           fillOpacity="1"
+          fill="#282c34"
           d="M0,128L60,106.7C120,85,240,43,360,21.3C480,0,600,0,720,26.7C840,53,960,107,1080,122.7C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
         ></path>
       </svg>
@@ -88,8 +106,11 @@ function App() {
       <Text text="La direccion" opaque={true} asTitle={true} />
       <Text text="Inserte una direccion valida aqui #900, Santa Catarina N.L." />
       <div className="image-anchor" onClick={goToDirection}>
-        <img src={mypointer} alt="mi puntoero" />
-        <p>Vee la ubicación en el mapa</p>
+        <img src={mypointer} alt="mi puntero" />
+        <p>
+          Vee la ubicación en el mapa <br />
+          <small>(Haz click en esta sección)</small>
+        </p>
       </div>
       <br />
       <br />
@@ -98,6 +119,12 @@ function App() {
       <Image src={mydress} alt="mis quince" />
       <br />
       <br />
+    </section>
+  );
+
+  return (
+    <div className="App">
+      {isLoading ? loader : content}     
     </div>
   );
 }
