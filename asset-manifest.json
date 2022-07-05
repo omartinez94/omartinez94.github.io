@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/xvvale/static/css/main.ce90ba83.css",
-    "main.js": "/xvvale/static/js/main.a3d25e16.js",
+    "main.css": "/xvvale/static/css/main.6a8c0f37.css",
+    "main.js": "/xvvale/static/js/main.fc4932d0.js",
     "static/js/787.d6ee00ee.chunk.js": "/xvvale/static/js/787.d6ee00ee.chunk.js",
     "static/media/video_alt.mp4": "/xvvale/static/media/video_alt.967fb7c6585e4e957958.mp4",
     "static/media/mydress.svg": "/xvvale/static/media/mydress.596c7aa0aa3c259cbe3fa4fe538909bb.svg",
@@ -12,12 +12,12 @@
     "static/media/myxv.svg": "/xvvale/static/media/myxv.9c7ade4082b63e50324b1821eb584697.svg",
     "static/media/myenvelope.svg": "/xvvale/static/media/myenvelope.08a9123278c04f758d63de4750e50805.svg",
     "index.html": "/xvvale/index.html",
-    "main.ce90ba83.css.map": "/xvvale/static/css/main.ce90ba83.css.map",
-    "main.a3d25e16.js.map": "/xvvale/static/js/main.a3d25e16.js.map",
+    "main.6a8c0f37.css.map": "/xvvale/static/css/main.6a8c0f37.css.map",
+    "main.fc4932d0.js.map": "/xvvale/static/js/main.fc4932d0.js.map",
     "787.d6ee00ee.chunk.js.map": "/xvvale/static/js/787.d6ee00ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce90ba83.css",
-    "static/js/main.a3d25e16.js"
+    "static/css/main.6a8c0f37.css",
+    "static/js/main.fc4932d0.js"
   ]
 }
